@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.fixed-menu .ant-menu-item {
+	@apply flex h-14 rounded-3xl text-center min-w-20 !important;
+  padding: 0 30px;
+}
+.ant-btn .custom-btn {
+  @apply px-14 py-6 shadow-none !important;
+}
+.ant-btn {
+  @apply px-10 py-5 shadow-none !important;
+}
+
+
