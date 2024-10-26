@@ -49,7 +49,7 @@ function OurTeam() {
                             Jospine Sonia UWIMENA
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                         Women warriors program lead
+                         Women  program lead
                         </p>
                     </div>
                  
@@ -78,7 +78,7 @@ function OurTeam() {
                             ISHIMWE Ami Paradis
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                            CTO and Co-founder
+                            Software Engineer
                         </p>
                     </div>
 

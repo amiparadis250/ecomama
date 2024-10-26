@@ -65,7 +65,7 @@ const Page: React.FC = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSfXoRvmHQJh9mCjEp-5DzRQ3jtVdpjSFwPcNleGCU7UMmaR8A/viewform"
               passHref
             >
-              <Button type="primary" size="large" icon={<ArrowRightOutlined />}>
+              <Button id="hero" type="primary" size="large" icon={<ArrowRightOutlined />}>
                 Apply Now
               </Button>
             </Link>
@@ -132,7 +132,7 @@ const Page: React.FC = () => {
       {/* Rest of the components remain the same */}
       <Row gutter={[24, 24]}>
         <Col xs={24} lg={12}>
-          <Card title={<Title level={2}>Eligibility Requirements</Title>}>
+          <Card id="eligibility" title={<Title level={2}>Eligibility Requirements</Title>}>
             <List
               dataSource={eligibilityRequirements}
               renderItem={(item) => (
