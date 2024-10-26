@@ -23,15 +23,21 @@ const WhyChooseUs = () => {
                     <div className='bg-[#004fb627] p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
                         <Image src={icons.team} alt='team' />
                         <div className='flex gap-2 flex-col'>
-                            <h1 className='font-bold'>we offer online counseling</h1>
+                            <h1 className='font-bold'>Telepsychiatry</h1>
                             <p className='text-sm text-gray-500'> Connect with certified mental health professionals from the comfort of your home, ensuring personalized support and confidentiality.</p>
+                            <li>virtual consultation</li>
+                            <li>Online consulting</li>
+                            <li>Secured appointment</li>
                         </div>
                     </div>
                     <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
                         <Image src={icons.service} alt='team' />
                         <div className='flex gap-2 flex-col'>
                             <h1 className='font-bold'>AI-driven,mental health assessment</h1>
-                            <p className='text-sm text-gray-500'>Our AI-assisted mental health assessment tool provides accurate, up-to-date results.</p>
+                            <p className='text-sm text-gray-500'>
+                            Our AI-assisted mental health assessment tool provides accurate, up-to-date results through advanced technologies. For example, assessments using an AI chatbot deliver personalized insights to support your mental health journey.
+                            </p>
+                            
                         </div>
                     </div>
                 </div>
@@ -39,8 +45,8 @@ const WhyChooseUs = () => {
                 <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
                         <Image src={icons.consultation} alt='team' />
                         <div className='flex gap-2 flex-col'>
-                            <h1 className='font-bold'> virtual consultation</h1>
-                            <p className='text-sm text-gray-500'>we provide virtual consultation with experienced mental health professionals.</p>
+                            <h1 className='font-bold'>Lifestyle Tips</h1>
+                            <p className='text-sm text-gray-500'>Through our daily updated Hubs , we provide you with a range of lifestyle tips and resources to enhance your mental health and well-being. </p>
                         </div>
                     </div>
                     <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>

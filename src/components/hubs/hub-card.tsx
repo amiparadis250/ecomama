@@ -18,7 +18,7 @@ const BlogCard = ({ blog }:any) => {
                     <span className='text-gray-500 text-sm'>4 min read</span>
                 </div>
                 <h1 className='text-gray-700 font-semibold text-sm'>{blog.title}</h1>
-                <p className='text-gray-500 text-xs'>{blog.description}</p>
+                <p className='text-gray-500 text-sm'>{blog.description}</p>
                 <div className='flex gap-2 items-center mt-2'>
                     <Image
                         src={blog.author.image}
@@ -26,7 +26,7 @@ const BlogCard = ({ blog }:any) => {
                         className='rounded-full w-8 h-8 object-cover'
                     />
                     <div className='flex flex-col'>
-                        <span className='text-gray-500 text-xs'>{blog.author.name}</span>
+                        <span className='text-gray-500 text-sm'>{blog.author.name}</span>
                         <span className='text-gray-400 text-[.6em]'>{blog.createdAt}</span>
                     </div>
                 </div>

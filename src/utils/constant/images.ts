@@ -6,9 +6,15 @@ import Speciouse from '@/assets/images/Speciose_UZAMURANGA-removebg-preview.png'
 import Joie from '@/assets/images/Joie_Sophia_UMUHOZA-removebg-preview.png'
 import Paradis from '@/assets/images/ami_paradis_1729861537760-removebg-preview.png'
 import Joseph from '@/assets/images/WhatsApp Image 2024-10-23 at 17.20.57_28f2cb61.jpg'
+import ecomamaLogo from '@/assets/images/download.jpg'
+import consultation from '@/assets/images/conseling.jpg'
 
 import farmer from "@/assets/images/farmer.png"
 import stormy from "@/assets/images/stormseeker-rX12B5uX7QM-unsplash.jpg"
+import mentalhealth from "@/assets/images/mental health.jpg"
+import depressed from "@/assets/images/depressed.jpg"
+import fight from "@/assets/images/fight.jpg"
+import listen from "@/assets/images/tega amatwi.jpg"
 
 export const images = {
     profile,
@@ -21,6 +27,15 @@ export const images = {
     Joseph,
    
     farmer,
-    stormy
+    stormy,
+
+    ecomamaLogo,
+    consultation,
+    listen,
+    mentalhealth,
+    depressed,
+    fight
+
+
  }
     
