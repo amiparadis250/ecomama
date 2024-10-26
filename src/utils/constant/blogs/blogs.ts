@@ -41,7 +41,7 @@ export const allBlogs = [
   {
     title: "Managing Stress: Practical Tips for Busy People",
     description: "Life can get hectic, and stress often follows. These practical, quick tips will help you manage stress and stay calm even on the busiest days",
-    cover: images.depressed,
+    cover: images.africanWoman,
     createdAt: "June 15, 2024",
     author: {
       image: images.Joie,
@@ -59,9 +59,9 @@ export const allBlogs = [
     }
   },
   {
-    title: "Supporting Friends with Mental Health Challenges",
+    title: "The Climate Change Connection: How Climate change affects mental health",
     description: "Many are feeling overwhelmed by climate news and events. Find out how to support friends dealing with climate-related anxiety and other mental health challenges.",
-    cover: images.fight,
+    cover: images.ecohub,
     createdAt: "April 18, 2024",
     author: {
       image: images.jovise,
