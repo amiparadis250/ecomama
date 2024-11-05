@@ -60,7 +60,7 @@ export const allBlogs = [
   },
   {
     title: "The Climate Change Connection: How Climate change affects mental health",
-    description: "Many are feeling overwhelmed by climate news and events. Find out how to support friends dealing with climate-related anxiety and other mental health challenges.",
+    description: "Support the environment by planting trees, reducing plastics, conserving water, using local products, and creating wildlife habitats. These actions promote a healthier planet!",
     cover: images.ecohub,
     createdAt: "April 18, 2024",
     author: {
