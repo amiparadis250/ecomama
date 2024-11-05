@@ -33,7 +33,7 @@ const Page: React.FC = () => {
   ];
 
   const eligibilityRequirements = [
-    'Must be 18 years old or above',
+
     'Must be Rwandan woman living in rural district',
     'Must have access to internet and device for training',
     'All education levels welcome'

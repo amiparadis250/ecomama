@@ -15,7 +15,7 @@ const Hero = () => {
             Empowering Women’s Mental Health During Climate Change
           </h1>
           <p className='text-sm text-gray-500'>
-            ECO-MAMA is a digital health platform that helps vulnerable women in Africa, particularly Rwanda, cope with the psychological impact of climate change. By utilizing AI-driven mental health assessments and telepsychiatry, ECO-MAMA provides localized mental health support, while the WOMEN WARRIORS Program empowers women to become advocates for mental health resilience in their communities.
+            ECO-MAMA is a digital health platform that helps vulnerable women to cope with the psychological impact of climate change. By utilizing AI-driven mental health assessments and telepsychiatry, ECO-MAMA provides localized mental health support, while the WOMEN WARRIORS Program empowers women to become advocates for mental health resilience in their communities.
           </p>
         </div>  
         <div className='flex gap-10 flex-wrap max-sm:gap-4'>
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
         <div className='flex justify-between flex-wrap'>
           <div className='flex gap-2 items-center'>
-            <span className='text-5xl font-bold text-primary'>50+</span>
+            <span className='text-5xl font-bold text-primary'>300+</span>
             <div className='flex flex-col text-sm text-gray-500'>
               <span>Women</span>
               <span>Helped</span>
