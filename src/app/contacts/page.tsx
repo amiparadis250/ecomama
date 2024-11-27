@@ -1,7 +1,90 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
+import { createMessage } from '@/utils/axios/messageService'; 
+import { toast } from 'react-toastify';
+import {message, Alert} from"antd"
 
 
+interface FormData {
+    full_names: string;
+    email: string;
+    telephone: string;
+    message: string;
+  }
 const Contacts: React.FC = () => {
+    const [formData, setFormData] = useState({
+     full_names: '',
+        email: '',
+        telephone: '',
+        message: '',
+      });
+      const [loading, setLoading] = useState(false);
+      const [responseMessage, setResponseMessage] = useState<string | null>(null);
+    
+      const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+    
+      const validateForm = (): boolean => {
+        const { full_names, email, telephone, message } = formData;
+        let isValid = true;
+    
+        if ((full_names.trim() === '')&&(full_names.length === 0) ){
+          toast.error('Please enter your name.');
+          isValid = false;
+        }
+    
+        if (email.trim() === '') {
+          toast.error('Please enter your email.');
+          isValid = false;
+        } else if (!validateEmail(email)) {
+          toast.error('Please enter a valid email address.');
+          isValid = false;
+        }
+    
+        if ((telephone.trim() === '')&& (telephone.length === 10)) {
+          toast.error('Please enter your phone number.');
+          isValid = false;
+        }
+    
+        if ((message.trim() === '' )&& (message.length ===20)) {
+          toast.error('Please enter a message.');
+          isValid = false;
+        }
+    
+        return isValid;
+      };
+    
+      const validateEmail = (email: string): boolean => {
+        // Simple email validation pattern
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      };
+    
+      const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+    
+        if (!validateForm()) {
+          return;
+        }
+    
+        setLoading(true);
+        try {
+          const response = await createMessage(formData);
+          setResponseMessage('Message received successfully!');
+    
+        
+          
+          setFormData({ full_names: '', email: '', telephone: '', message: '' });
+        } catch (error) {
+          setResponseMessage('Error creating message.');
+          message.success("Error creating message");
+        
+        } finally {
+          setLoading(false);
+        }
+      }; 
     return (
         <section
             className="lg:px-20 relative z-10 overflow-hidden bg-white py-20 lg:py-[50px]"
@@ -120,47 +203,74 @@ const Contacts: React.FC = () => {
                         </div>
                     </div>
                     <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+                    {responseMessage && (
+                            <div className="mb-4">
+                                <Alert
+                                    message={responseMessage}
+                                    type="success" 
+                                    showIcon 
+                                    closable 
+                                />
+                            </div>
+                        )}
                         <div
                             className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12-2"
                         >
-                            <form>
-                                <div className="mb-6">
-                                    <input
-                                        type="text"
-                                        placeholder="Your Name"
-                                        className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
-                                    />
-                                </div>
-                                <div className="mb-6">
-                                    <input
-                                        type="email"
-                                        placeholder="Your Email"
-                                        className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
-                                    />
-                                </div>
-                                <div className="mb-6">
-                                    <input
-                                        type="text"
-                                        placeholder="Your Phone"
-                                        className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
-                                    />
-                                </div>
-                                <div className="mb-6">
-                                    <textarea
-                                        rows={6}
-                                        placeholder="Your Message"
-                                        className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
-                                    ></textarea>
-                                </div>
-                                <div>
-                                    <button
-                                        type="submit"
-                                        className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
-                                    >
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
+                            
+<form onSubmit={handleSubmit}>
+                <div className="mb-6">
+                  <input
+                    type="text"
+                    name="full_names"
+                    placeholder="Your Name"
+                    value={formData.full_names}
+                    onChange={handleInputChange}
+                    className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
+                  />
+                </div>
+                <div className="mb-6">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
+                  />
+                </div>
+                <div className="mb-6">
+                  <input
+                    type="text"
+                    name="telephone"
+                    placeholder="Your Phone"
+                    value={formData.telephone}
+                    onChange={handleInputChange}
+                    className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
+                  />
+                </div>
+                <div className="mb-6">
+                  <textarea
+                    rows={6}
+                    name="message"
+                    placeholder="Your Message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:text-dark-6"
+                  ></textarea>
+                </div>
+                <div>
+    <button
+      type="submit" // Ensure the button submits the form
+      className="bg-blue-600 min-h-[40px] w-full max-w-[100%] text-white px-10 rounded-s-sm hover:bg-blue-700 relative"
+    >
+      {!loading && "Submit"} {/* Change 'name' to "Submit" or any other text you want */}
+      {loading && (
+        <div className="border-t-4 border-b-4 border-white rounded-full w-6 h-6 animate-spin m-auto"></div>
+      )}
+    </button>
+    </div>
+                
+              </form>
                             <div>
                                 <span className="absolute -right-9 -top-10 z-[-1]">
                                     <svg
