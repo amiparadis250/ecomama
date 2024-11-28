@@ -72,7 +72,7 @@ function OurTeam() {
                         <Image
                             className="rounded-full h-32 w-32 object-cover mb-4"
                             src={images.Paradis}
-                            alt="ISHIMWE Ami Paradis"
+                            alt=" Ami Paradis"
                         />
                         <h3 className="text-lg font-semibold text-gray-900">
                             ISHIMWE Ami Paradis
