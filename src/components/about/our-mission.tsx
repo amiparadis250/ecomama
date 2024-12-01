@@ -9,7 +9,7 @@ const OurMission = () => {
         <Image src={icons.rocket} alt="our mission" />
         <span className='text-2xl text-primary font-semibold'>Our Mission</span>
       </div>
-      <p className='text-gray-500 text-sm'>ECO-MAMA empowers vulnerable women in Africa, particularly Rwanda, by providing accessible, AI-driven mental health support and education to address climate-induced stress. Through digital tools and the WOMEN WARRIORS Program, we train women to promote mental health resilience, reduce stigma, and raise awareness in their communities, aligning with SDG13 and SDG3.</p>
+      <p className='text-gray-500 text-sm'>To empower women by providing accessible, innovative, ensuring early intervention, individualized treatment, and a supportive community to improve well-being and resilience</p>
     </div>
   )
 }

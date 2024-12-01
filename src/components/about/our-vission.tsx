@@ -9,7 +9,7 @@ const OurVision = () => {
         <Image src={icons.rocket} alt="our mission" />
         <span className='text-2xl text-primary font-semibold'>Our Vision</span>
       </div>
-      <p className='text-gray-500 text-sm'>To create a resilient and empowered generation of African women who can overcome the psychological impacts of climate change, leading healthier lives, building stronger communities, and becoming champions of mental health resilience across the continent.</p>
+      <p className='text-gray-500 text-sm'>o build a world where every woman impacted by climate change has access to compassionate, personalized mental health care and utilizes cutting-edge technology in healthier communities worldwide</p>
     </div>
   )
 }

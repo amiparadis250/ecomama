@@ -21,7 +21,7 @@ function OurTeam() {
                         Meet our <span className="text-primary">Team</span>
                     </h2>
                     <p className="mt-4 text-gray-600 text-base max-w-2xl mx-auto">
-                        A team dedicated to empowering vulnerable women in Rwanda through AI-driven mental health support and telepsychiatry, addressing climate change's psychological impact
+                    A team dedicated to empowering vulnerable women globally through AI-driven mental health support and telepsychiatry, addressing climate change's psychological impact.
                     </p>
                 </div>
                 

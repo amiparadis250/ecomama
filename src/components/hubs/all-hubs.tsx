@@ -16,7 +16,7 @@ interface Blog {
   
   // AllHubs.tsx
   import { useEffect, useState } from 'react';
-  import { Button } from 'antd';
+  import { Button, Spin } from 'antd';
   import BlogCard from './hub-card';
   import { getAllBlogs } from '@/utils/axios/allblogs';
   import { CustomButton } from '../hubs/CustomButton';
@@ -50,7 +50,7 @@ interface Blog {
         </div>
         {loading ? (
           <div className="flex justify-center items-center min-h-[200px]">
-            Loading...
+            <Spin size="large" />
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
