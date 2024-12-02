@@ -195,7 +195,7 @@ function FooterComp() {
                                     </svg>
                                 </a> 
                                 <a
-                                    href="https://www.linkedin.com/in/eco-mama-9212ab332/"
+                                    href="https://www.linkedin.com/posts/eco-mamatech_u4hdays2024-marketofopportunities-activity-7262661202688839680-Y55_?utm_source=share&utm_medium=member_desktop"
                                     className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 text-gray-200"
                                 >
                                     <svg
