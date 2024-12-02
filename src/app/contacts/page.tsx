@@ -104,7 +104,7 @@ const Contacts: React.FC = () => {
                             <p
                                 className="mb-9 text-sm leading-relaxed text-body-color text-gray-600"
                             >
-                                ECO-MAMA is a digital health platform that helps vulnerable women in Africa, particularly Rwanda, cope with the psychological impact of climate change. By utilizing AI-driven mental health assessments and telepsychiatry, ECO-MAMA provides localized mental health support, while the WOMEN WARRIORS Program empowers women to become advocates for mental health resilience in their communities.
+                                ECO-MAMA is a digital health platform that helps vulnerable women cope with the psychological impact of climate change. By utilizing AI-driven mental health assessments and telepsychiatry, ECO-MAMA provides localized mental health support, while the WOMEN WARRIORS Program empowers women to become advocates for mental health resilience in their communities.
                             </p>
                             <div className="mb-8 flex w-full max-w-[370px]">
                                 <div

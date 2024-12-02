@@ -1,17 +1,38 @@
-import { icons } from '@/utils/constant/icons'
-import Image from 'next/image'
-import React from 'react'
+import React from 'react';
 
 const OurVision = () => {
   return (
-    <div className='w-1/2 max-sm:w-full drop-shadow-md bg-white p-4 rounded-md flex flex-col gap-3'>
-      <div className='flex justify-center items-center gap-2'>
-        <Image src={icons.rocket} alt="our mission" />
-        <span className='text-2xl text-primary font-semibold'>Our Vision</span>
+    <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex items-center justify-center gap-3 mb-6">
+        <div className="p-3 bg-purple-100 rounded-full">
+          <svg 
+            className="w-6 h-6 text-purple-600" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+            />
+          </svg>
+        </div>
+        <h2 className="text-2xl font-bold text-purple-600">Our Vision</h2>
       </div>
-      <p className='text-gray-500 text-sm'>o build a world where every woman impacted by climate change has access to compassionate, personalized mental health care and utilizes cutting-edge technology in healthier communities worldwide</p>
+      <p className="text-gray-600 text-center leading-relaxed">
+        To build a world where every woman impacted by climate change has access to compassionate, 
+        personalized mental health care and utilizes cutting-edge technology in healthier communities worldwide
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default OurVision
+export default OurVision;

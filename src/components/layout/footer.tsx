@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "@/assets/images/eco-mama.png"
 import Image from "next/image";
+import Link from "next/link";
 
 
 function FooterComp() {
@@ -13,15 +14,13 @@ function FooterComp() {
                 <div className="mx-4 flex flex-wrap justify-between">
                     <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
                         <div className="mb-10 w-full">
-                            <a
-                                className="mb-6 inline-block max-w-[160px]"
-                            >
-                                <Image
-                                    src={logo}
-                                    alt="logo"
-                                    className="w-24"
-                                />
-                            </a>
+                        <Link href="https://dashboard.ecomma.info/" className="mb-6 inline-block max-w-[160px]">
+                   <Image
+                    src={logo}
+                 alt="logo"
+                  className="w-24"
+                    />
+                 </Link>
                             <p className="mb-7 text-base text-body-color text-gray-200">
                             eco-mama:where women meets sustainability, and mental health wellness
                             </p>

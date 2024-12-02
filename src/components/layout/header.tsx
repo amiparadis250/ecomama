@@ -56,7 +56,7 @@ function NavHeader() {
                         />
                     </div>
                     <div>
-                        <Link href="/programs#eligibility">
+                        <Link href="https://dashboard.ecomma.info/">
                             <Button type="primary">Get Started</Button>
                         </Link>
                     </div>
