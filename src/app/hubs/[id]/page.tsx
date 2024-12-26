@@ -86,8 +86,9 @@ export default function BlogPage({ params }: { params: { id: string } }) {
         <Image
           src={blog.photo_url}
           alt={blog.title}
-          fill
-          className="rounded-lg object-cover"
+            fill
+        className="rounded-lg object-cover"
+         
           priority
         />
       </div>

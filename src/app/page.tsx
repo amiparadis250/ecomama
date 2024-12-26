@@ -1,7 +1,7 @@
 import Blogs from "@/components/hubs";
 import Hero from "@/components/hero-section";
 import WhyChooseUs from "@/components/why-choose-us";
-import Testimonials from "@/components/Testimonials/testmonials";
+
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <Blogs />
-      <Testimonials />
+     
     </div>
   );
 }

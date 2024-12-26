@@ -30,12 +30,12 @@ const Hero = () => {
             </Button>
           </Link>
         </div>
-        <div className='flex justify-between flex-wrap'>
+        {/* <div className='flex justify-between flex-wrap'>
           <div className='flex gap-2 items-center'>
-            <span className='text-5xl font-bold text-primary'>300+</span>
+            <span className='text-5xl font-bold text-primary'>100+</span>
             <div className='flex flex-col text-sm text-gray-500'>
               <span>Women</span>
-              <span>Helped</span>
+              <span>will be Helped upon launch</span>
             </div>
           </div>
           <div className='flex gap-2 items-center'>
@@ -45,7 +45,7 @@ const Hero = () => {
               <span>Visited</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='w-[50%] max-sm:hidden flex justify-end'>
         <Image src={showcase} alt='showcase' width={550} className='max-md:w-96' />
