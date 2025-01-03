@@ -64,7 +64,7 @@ function OurTeam() {
                             Jovise Solive UMUHIRE
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                         COO of ECO-MAMA
+                        Social media manager
                         </p>
                     </div>
 
@@ -82,7 +82,7 @@ function OurTeam() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col items-center text-center">
+                    {/* <div className="flex flex-col items-center text-center">
                         <Image
                             className="rounded-full h-32 w-32 object-cover mb-4"
                             src={images.Speciouse}
@@ -94,7 +94,7 @@ function OurTeam() {
                         <p className="text-primary font-medium mt-1">
                             Advisor, and community coordinator 
                         </p>
-                    </div>
+                    </div> */}
 
                     
 
